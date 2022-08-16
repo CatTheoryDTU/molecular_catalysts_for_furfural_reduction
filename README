@@ -1,0 +1,7 @@
+**Furfural reduction reaction on molecular catalysts**
+
+1. This package includes the scripts and main data for plotting major computational figures in the manuscript.
+
+2. In the structure folder, you could find file.cif of calculated models applied in this work.
+
+3. Software: VASP 5.4.4; DFT functional: RPBE-D3, HSE06
