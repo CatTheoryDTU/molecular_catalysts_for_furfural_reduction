@@ -1,4 +1,4 @@
-mporting the required packages
+# importing the required packages
 #------------------------------------------
 # get_ipython().run_line_magic('matplotlib', 'auto')
 # import matplotlib.pyplot as plt
@@ -23,14 +23,15 @@ df.set_index('surfaces', inplace=True)
 steps = list(df.keys())[0:7]
 E = df.T.to_dict()
 surfaces = list(E.keys())[0:4]
+
 # desorption of FCHOH*     
 xx = np.linspace(0,8,100)
-yy = 0*xx
-#ax.plot(xx, yy, color = 'grey', ls = '--', lw = 3, alpha = 0.5)
+yy = 0*xx + 0.86 + u
+ax.plot(xx, yy, color = 'grey', ls = '--', lw = 3, alpha = 0.5)
 
 #print(E)
 
-u = -0.6
+u = -0.5
 for s in surfaces:
     e = E[s]
     for i,ss in enumerate(steps):
